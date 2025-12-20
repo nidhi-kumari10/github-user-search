@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitHub User Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="icon">🔍</div>
+      <h1>GitHub User Search</h1>
+      <p>Discover developers from around the world</p>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search GitHub users..." />
+    </div>
+
+<div class="controls">
+  <div class="view">
+    <span>View:</span>
+    <button id="gridBtn" class="active">▦ Grid</button>
+    <button id="listBtn">☰ List</button>
+  </div>
+
+  <div class="sort">
+    <label>Sort:</label>
+    <select id="sortSelect">
+      <option value="followers">Followers</option>
+      <option value="repos">Repositories</option>
+      <option value="name">Name</option>
+    </select>
+  </div>
+</div>
+
+
+    <!-- Status -->
+    <div id="status" class="status"></div>
+
+    <!-- Results -->
+    <div id="results" class="results"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

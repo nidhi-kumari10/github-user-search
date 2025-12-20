@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #111633, #050814);
+  color: #d6d9ff;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #aab1ff;
+}
+
+.header p {
+  color: #8a90c8;
+  margin-top: 5px;
+}
+
+/* Search */
+.search-box input {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  border: none;
+  background: #1a1f3c;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.view span {
+  margin-right: 10px;
+}
+
+.view button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #1a1f3c;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.view button.active {
+  background: #6c72ff;
+}
+
+.sort select {
+  background: #1a1f3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Status */
+.status {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8a90c8;
+}
+
+/* Results */
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* User Card */
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #151a36;
+  padding: 15px 20px;
+  border-radius: 16px;
+}
+
+.user-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.user h3 {
+  color: white;
+}
+
+.user span {
+  color: #8a90c8;
+  font-size: 14px;
+}
+
+.user a {
+  background: #6c72ff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user a:hover {
+  opacity: 0.9;
+}
+/* Grid View */
+.results.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* List View */
+.results.list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid Card */
+.results.grid .user {
+  flex-direction: column;
+  text-align: center;
+}
+
+.results.grid .user img {
+  width: 80px;
+  height: 80px;
+}
+
+.results.grid .user a {
+  margin-top: 15px;
+  width: 100%;
+}
+
